@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <form action="" id="contato">
+        <fieldset form="contato" name="contato-input">
+            <legend>Entre em contato</legend>
+            <br>
+
+            <label for="assunto" class="labelNegrito">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value="suporte">Suporte</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="nome" class="labelNegrito">Nome Completo:</label>
+            <br>
+            <input 
+            type="text" 
+            placeholder="Seu Nome"
+            name="nome"
+            form="contato"
+            required
+            autocomplete="cc-family-name"
+            >
+            <br>
+            <br>
+
+            <label for="email" class="labelNegrito">E-mail:</label>
+            <br>
+            <input type="email" 
+            name="email" 
+            form="contato"
+            id="email"
+            placeholder="enail@seudominio.com"
+            required
+
+            >
+            <br>
+            <br>
+
+            <label for="mensagem" class="labelNegrito">Mensagem:</label>
+            <br>
+            <textarea name="mensagem" 
+            id="mensagem" 
+            cols="25" rows="8"
+            form="contato"
+            required
+            ></textarea>
+            <br>
+            <br>
+
+            <input 
+            type="checkbox" 
+            name="checkNovidade" 
+            id="checkNovidade"
+            form="contato"
+            value="sim"
+            >
+            <label for="checkNovidade">Aceito receber novidades por e-mail</label>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+
+            
+
+        </fieldset>
+    </form>
+</body>
+</html>
